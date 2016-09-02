@@ -7,7 +7,7 @@ ENV PAYARA_PATH /opt/payara41
 
 RUN \
  apt-get update && \ 
- apt-get install -y unzip \
+ apt-get install -y unzip && \
  apt-get install -y maven
 
 RUN wget --quiet -O /opt/$PKG_FILE_NAME $PAYARA_PKG
